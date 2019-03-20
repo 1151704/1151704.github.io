@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://1151704.github.io/DocAngular/caracteristicas</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/en/caracteristicas" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/help</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/en/help" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/en/index" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/en/users" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/blog/2017/10/24/new-version-1.0.0</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://1151704.github.io/DocAngular/blog/2017/09/26/adding-rss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://1151704.github.io/DocAngular/blog/2017/09/25/testing-rss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://1151704.github.io/DocAngular/blog/2017/04/10/blog-post-two</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://1151704.github.io/DocAngular/blog/2016/03/11/blog-post</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/angular</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/angular" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/atom</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/atom" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/componentes</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/componentes" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/creacion</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/creacion" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/detail-hero</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/detail-hero" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/hero</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/hero" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/instalacion</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/instalacion" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/list-hero</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/list-hero" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/node</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/node" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/stackblitz</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/stackblitz" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/tutorial</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/tutorial" /> </url>
+<url> <loc>https://1151704.github.io/DocAngular/docs/visual</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/DocAngular/docs/visual" /> </url>
+</urlset>
