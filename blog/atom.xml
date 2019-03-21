@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1151704.github.io/blog</id>
-    <title>Angular Blog</title>
+    <title>Angular Doc Blog</title>
     <updated>2017-10-24T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://1151704.github.io/blog"/>
-    <subtitle>The best place to stay up-to-date with the latest Angular news and events.</subtitle>
+    <subtitle>The best place to stay up-to-date with the latest Angular Doc news and events.</subtitle>
     <logo>https://1151704.github.io/img/angular.svg</logo>
     <rights>Copyright © 2019 UFPS / Programación web</rights>
     <entry>

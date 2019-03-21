@@ -3,7 +3,6 @@
 <url> <loc>https://1151704.github.io/caracteristicas</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/en/caracteristicas" /> </url>
 <url> <loc>https://1151704.github.io/help</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/en/help" /> </url>
 <url> <loc>https://1151704.github.io/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/en/index" /> </url>
-<url> <loc>https://1151704.github.io/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/en/users" /> </url>
 <url> <loc>https://1151704.github.io/blog/2017/10/24/new-version-1.0.0</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://1151704.github.io/blog/2017/09/26/adding-rss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://1151704.github.io/blog/2017/09/25/testing-rss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
@@ -14,10 +13,12 @@
 <url> <loc>https://1151704.github.io/docs/componentes</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/componentes" /> </url>
 <url> <loc>https://1151704.github.io/docs/creacion</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/creacion" /> </url>
 <url> <loc>https://1151704.github.io/docs/detail-hero</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/detail-hero" /> </url>
+<url> <loc>https://1151704.github.io/docs/routing</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/routing" /> </url>
 <url> <loc>https://1151704.github.io/docs/hero</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/hero" /> </url>
 <url> <loc>https://1151704.github.io/docs/instalacion</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/instalacion" /> </url>
 <url> <loc>https://1151704.github.io/docs/list-hero</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/list-hero" /> </url>
 <url> <loc>https://1151704.github.io/docs/node</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/node" /> </url>
+<url> <loc>https://1151704.github.io/docs/servicio</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/servicio" /> </url>
 <url> <loc>https://1151704.github.io/docs/stackblitz</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/stackblitz" /> </url>
 <url> <loc>https://1151704.github.io/docs/tutorial</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/tutorial" /> </url>
 <url> <loc>https://1151704.github.io/docs/visual</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://1151704.github.io/docs/visual" /> </url>

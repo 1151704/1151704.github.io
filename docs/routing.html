@@ -1,0 +1,833 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Enrutamiento · Angular Doc</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;enrutamiento&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#enrutamiento&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Enrutamiento&lt;/h2&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Enrutamiento · Angular Doc"/><meta property="og:type" content="website"/><meta property="og:url" content="https://1151704.github.io/index.html"/><meta property="og:description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;enrutamiento&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#enrutamiento&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Enrutamiento&lt;/h2&gt;
+"/><meta property="og:image" content="https://1151704.github.io/img/angular.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://1151704.github.io/img/angular.png"/><link rel="shortcut icon" href="/img/favicon/favicon-32x32.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css"/><link rel="stylesheet" href="/css/code-block-buttons.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/angular.svg" alt="Angular Doc"/><h2 class="headerTitleWithLogo">Angular Doc</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/angular" target="_self">Docs</a></li><li class=""><a href="/caracteristicas" target="_self">Caracteristicas</a></li><li class=""><a href="/help" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Tutorial</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Empezando</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/angular">Que es Angular</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Empezar a usar</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/node">Nodejs</a></li><li class="navListItem"><a class="navItem" href="/docs/instalacion">Angular</a></li><li class="navListItem"><a class="navItem" href="/docs/creacion">Creación del proyecto</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Editor</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/visual">Visual Studio Code</a></li><li class="navListItem"><a class="navItem" href="/docs/atom">Atom</a></li><li class="navListItem"><a class="navItem" href="/docs/stackblitz">StackBlitz</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Tutorial</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/tutorial">Aplicación base</a></li><li class="navListItem"><a class="navItem" href="/docs/hero">Héroes</a></li><li class="navListItem"><a class="navItem" href="/docs/list-hero">Lista de héroes</a></li><li class="navListItem"><a class="navItem" href="/docs/detail-hero">Detalle del héroe</a></li><li class="navListItem"><a class="navItem" href="/docs/servicio">Servicios</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/routing">Enrutamiento</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Enrutamiento</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="enrutamiento"></a><a href="#enrutamiento" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enrutamiento</h2>
+<p>Hay nuevos requisitos para la aplicación Tour of Heroes:</p>
+<ul>
+<li>Añadir una vista de panel de control.</li>
+<li>Añade la capacidad de navegar entre las vistas Héroes y Tablero .</li>
+<li>Cuando los usuarios hagan clic en el nombre de un héroe en cualquiera de las vistas, navegue a una vista detallada del héroe seleccionado.</li>
+<li>Cuando los usuarios hagan clic en un vínculo profundo en un correo electrónico, abra la vista detallada para un héroe en particular.</li>
+</ul>
+<p>Cuando hayas terminado, los usuarios podrán navegar por la aplicación de esta manera:
+<img src="/img/final.png" alt="Enrutamiento"></p>
+<h2><a class="anchor" aria-hidden="true" id="agregar-el-approutingmodule"></a><a href="#agregar-el-approutingmodule" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Agregar el AppRoutingModule</h2>
+<p>En Angular, la mejor práctica es cargar y configurar el enrutador en un módulo separado de nivel superior dedicado al enrutamiento e importado por la raíz AppModule.</p>
+<p>Por convención, el nombre de la clase del módulo es AppRoutingModule y pertenece <em>app-routing.module.ts</em> a la carpeta <em>src/app</em>.</p>
+<p>Usa el CLI para generarlo.</p>
+<pre><code class="hljs">ng <span class="hljs-keyword">generate</span> <span class="hljs-keyword">module</span> app-routing --flat --<span class="hljs-keyword">module</span>=app
+</code></pre>
+<blockquote>
+<p>--flat coloca el archivo en lugar src/app de su propia carpeta.</p>
+<p>--module=app le dice a la CLI que lo registre en la matriz de imports de AppModule.</p>
+</blockquote>
+<p>The generated file looks like this:</p>
+</span></div><div class="tabs"><div class="nav-tabs"><div class="nav-link active" id="10-tab" data-group="group_9" data-tab="tabpanel_10">src / app / app-routing.module.ts (generado)</div></div><div class="tab-content"><div class="tab-pane active" data-group="group_9" tabindex="-1" id="tabpanel_10"><div><span><pre><code class="hljs"><span class="hljs-keyword">import</span> { NgModule } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> { CommonModule } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/common'</span>;
+
+@NgModule({
+  imports: [
+    CommonModule
+  ],
+  declarations: []
+})
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppRoutingModule</span> { }</span>
+</code></pre>
+</span></div></div></div></div><div><span><p>Por lo general, no declara los componentes en un módulo de enrutamiento, por lo que también puede eliminar la matriz @NgModule.declarations  y eliminar las referencias de CommonModule tambie.</p>
+<p>Configurará el enrutador Routesen la RouterModule forma de importar esos dos símbolos de la biblioteca @angular/router.</p>
+<p>Añadir una matriz @NgModule.exports con RouterModule en él. Exportando RouterModule hace que las directivas de enrutador estén disponibles para su uso en el AppModule los componentes que las necesitarán.</p>
+<p>AppRoutingModule se ve así ahora</p>
+</span></div><div class="tabs"><div class="nav-tabs"><div class="nav-link active" id="12-tab" data-group="group_11" data-tab="tabpanel_12">src / app / app-routing.module.ts (v1)</div></div><div class="tab-content"><div class="tab-pane active" data-group="group_11" tabindex="-1" id="tabpanel_12"><div><span><pre><code class="hljs"><span class="hljs-keyword">import</span> { NgModule }             <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> { RouterModule, Routes } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/router'</span>;
+
+@NgModule({
+  exports: [ RouterModule ]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppRoutingModule</span> {}</span>
+</code></pre>
+</span></div></div></div></div><div><span><h3><a class="anchor" aria-hidden="true" id="agregar-rutas"></a><a href="#agregar-rutas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Agregar rutas</h3>
+<p>Las rutas le indican al enrutador qué vista mostrar cuando un usuario hace clic en un enlace o pega una URL en la barra de direcciones del navegador.</p>
+<p>Un Angular típico Routetiene dos propiedades:</p>
+<ol>
+<li>path: una cadena que coincide con la URL en la barra de direcciones del navegador.</li>
+<li>component: el componente que el enrutador debe crear al navegar a esta ruta.</li>
+</ol>
+<p>Tiene la intención de navegar a HeroesComponentcuando la URL es algo así localhost:4200/heroes.</p>
+<p>Importa el HeroesComponentpara que puedas referenciarlo en un archivo Route. Luego, defina una matriz de rutas con un solo routecomponente para ese componente.</p>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> { HeroesComponent }      from <span class="hljs-string">'./heroes/heroes.component'</span>;
+
+const <span class="hljs-string">routes:</span> Routes = [
+  { <span class="hljs-string">path:</span> <span class="hljs-string">'heroes'</span>, <span class="hljs-string">component:</span> HeroesComponent }
+];
+</code></pre>
+<p>Una vez que hayas terminado de configurar, el enrutador hará coincidir esa URL path: 'heroes' y mostrará el HeroesComponent.</p>
+<h3><a class="anchor" aria-hidden="true" id="routermoduleforroot"></a><a href="#routermoduleforroot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>RouterModule.forRoot ()</h3>
+<p>Primero debe inicializar el enrutador y comenzar a escuchar los cambios de ubicación del navegador.</p>
+<p>Agregue RouterModule a la matriz @NgModule.imports y configúrela con el routes en un solo paso llamando RouterModule.forRoot() dentro de la matriz de imports, como esto:</p>
+<pre><code class="hljs">imports: [ RouterModule.forRoot(routes) ],
+</code></pre>
+<blockquote>
+<p>Se llama al método forRoot()porque configura el enrutador en el nivel raíz de la aplicación. El forRoot()método proporciona los proveedores de servicios y las directivas necesarias para el enrutamiento y realiza la navegación inicial según la URL del navegador actual.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="anadir-routeroutlet"></a><a href="#anadir-routeroutlet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Añadir RouterOutlet</h2>
+<p>Abra la plantilla AppComponent reemplace el elemento <em>app-heroes</em> con un elemento <em>router-outlet</em>.</p>
+<pre><code class="hljs"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">router-outlet</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">router-outlet</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">app-messages</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">app-messages</span>&gt;</span>
+</span></code></pre>
+<p>Se eliminó <em>app-heroes</em> porque solo se mostrará HeroesComponent cuando el usuario navegue hacia él.</p>
+<p>El <em>router-outlet</em> Le indica al enrutador dónde mostrar las vistas enrutadas.</p>
+<blockquote>
+<p>El RouterOutlet es una de las directivas de router que ahora están disponibles para las AppComponent PORQUE AppModule importa AppRoutingModule que exportaron RouterModule.</p>
+</blockquote>
+<p>Pruébalo</p>
+<p>Todavía debe estar ejecutando con este comando CLI.</p>
+<pre><code class="hljs"><span class="hljs-attribute">ng serve</span>
+</code></pre>
+<p>El navegador debe actualizar y mostrar el título de la aplicación, pero no la lista de héroes.</p>
+<p>Mira la barra de direcciones del navegador. La URL termina en /. El camino a la ruta HeroesComponentes /heroes.</p>
+<p>Adjuntar /heroes a la URL en la barra de direcciones del navegador. Deberías ver la vista de maestro / detalle de los héroes familiares.</p>
+<h2><a class="anchor" aria-hidden="true" id="anadir-un-enlace-de-navegacion-routerlink"></a><a href="#anadir-un-enlace-de-navegacion-routerlink" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Añadir un enlace de navegación ( routerLink)</h2>
+<p>Los usuarios no deberían tener que pegar una URL de ruta en la barra de direcciones. Deben poder hacer clic en un enlace para navegar.</p>
+<p>Agregue un elemento <strong>nav</strong> y, dentro de eso, un elemento de anclaje que, al hacer clic, active la navegación hacia HeroesComponent. La plantilla AppComponent revisada se ve así:</p>
+<p>Un routerLinkatributo se establece en &quot;/heroes&quot;, la cadena con la que el enrutador coincide con la ruta HeroesComponent. El routerLinkes el selector para la directiva RouterLink que convierte los clics del usuario en navegaciones del enrutador. Es otra de las directivas publicas en el RouterModule.</p>
+<p>El navegador actualiza y muestra el título de la aplicación y el enlace de los héroes, pero no la lista de héroes.</p>
+<p>Haga clic en el enlace. La barra de direcciones se actualiza /heroes y aparece la lista de héroes.</p>
+<blockquote>
+<p>Haga que este y los futuros enlaces de navegación se vean mejor agregando estilos de CSS privados app.component.css como se indica en la revisión final del código a continuación.</p>
+</blockquote>
+<pre><code class="hljs"><span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.2em</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#999</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-tag">h2</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2em</span>;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">text-decoration</span>: none;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">display</span>: inline-block;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span>, <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:link</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#607d8b</span>;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#039be5</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#cfd8dc</span>;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.active</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#039be5</span>;
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="anadir-una-vista-de-panel-de-control"></a><a href="#anadir-una-vista-de-panel-de-control" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Añadir una vista de panel de control</h2>
+<p>El enrutamiento tiene más sentido cuando hay varias vistas. Hasta el momento sólo hay vista de los héroes.</p>
+<p>Agregue un DashboardComponent usando el CLI:</p>
+<pre><code class="hljs">ng <span class="hljs-keyword">generate</span> component dashboard
+</code></pre>
+<p>El CLI genera los archivos para DashboardComponent y lo declara en AppModule.</p>
+<p>Reemplace el contenido del archivo predeterminado en estos tres archivos de la siguiente manera y luego vuelva para una pequeña discusión:</p>
+</span></div><div class="tabs"><div class="nav-tabs"><div class="nav-link active" id="14-tab" data-group="group_13" data-tab="tabpanel_14">src / app / dashboard / dashboard.component.html</div><div class="nav-link" id="15-tab" data-group="group_13" data-tab="tabpanel_15">src / app / dashboard / dashboard.component.ts</div><div class="nav-link" id="16-tab" data-group="group_13" data-tab="tabpanel_16">src / app / dashboard / dashboard.component.css</div></div><div class="tab-content"><div class="tab-pane active" data-group="group_13" tabindex="-1" id="tabpanel_14"><div><span><pre><code class="hljs"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Top Heroes<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"grid grid-pad"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let hero of heroes"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-1-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"module hero"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span></span><span class="hljs-template-variable">{{hero.name}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</span></code></pre>
+</span></div></div><div class="tab-pane" data-group="group_13" tabindex="-1" id="tabpanel_15"><div><span><pre><code class="hljs"><span class="hljs-keyword">import</span> { Component, OnInit } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> { Hero } <span class="hljs-keyword">from</span> <span class="hljs-string">'../hero'</span>;
+<span class="hljs-keyword">import</span> { HeroService } <span class="hljs-keyword">from</span> <span class="hljs-string">'../hero.service'</span>;
+
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'app-dashboard'</span>,
+  templateUrl: <span class="hljs-string">'./dashboard.component.html'</span>,
+  styleUrls: [ <span class="hljs-string">'./dashboard.component.css'</span> ]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> DashboardComponent <span class="hljs-keyword">implements</span> OnInit {
+  heroes: Hero[] = [];
+
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">private</span> heroService: HeroService</span>) { }
+
+  ngOnInit() {
+    <span class="hljs-keyword">this</span>.getHeroes();
+  }
+
+  getHeroes(): <span class="hljs-built_in">void</span> {
+    <span class="hljs-keyword">this</span>.heroService.getHeroes()
+      .subscribe(<span class="hljs-function"><span class="hljs-params">heroes</span> =&gt;</span> <span class="hljs-keyword">this</span>.heroes = heroes.slice(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>));
+  }
+}
+</code></pre>
+</span></div></div><div class="tab-pane" data-group="group_13" tabindex="-1" id="tabpanel_16"><div><span><pre><code class="hljs"><span class="hljs-comment">/* DashboardComponent's private CSS styles */</span>
+<span class="hljs-selector-attr">[class*='col-']</span> {
+  <span class="hljs-attribute">float</span>: left;
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">20px</span>;
+}
+<span class="hljs-selector-attr">[class*='col-']</span><span class="hljs-selector-pseudo">:last-of-type</span> {
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+*, *<span class="hljs-selector-pseudo">:after</span>, *<span class="hljs-selector-pseudo">:before</span> {
+  <span class="hljs-attribute">-webkit-box-sizing</span>: border-box;
+  <span class="hljs-attribute">-moz-box-sizing</span>: border-box;
+  <span class="hljs-attribute">box-sizing</span>: border-box;
+}
+<span class="hljs-selector-tag">h3</span> {
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-tag">h4</span> {
+  <span class="hljs-attribute">position</span>: relative;
+}
+<span class="hljs-selector-class">.grid</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-class">.col-1-4</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">25%</span>;
+}
+<span class="hljs-selector-class">.module</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#eee</span>;
+  <span class="hljs-attribute">max-height</span>: <span class="hljs-number">120px</span>;
+  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">120px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#607d8b</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2px</span>;
+}
+<span class="hljs-selector-class">.module</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#607d8b</span>;
+}
+<span class="hljs-selector-class">.grid-pad</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-class">.grid-pad</span> &gt; <span class="hljs-selector-attr">[class*='col-']</span><span class="hljs-selector-pseudo">:last-of-type</span> {
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">20px</span>;
+}
+@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">600px</span>) {
+  <span class="hljs-selector-class">.module</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">max-height</span>: <span class="hljs-number">75px</span>; }
+}
+@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">1024px</span>) {
+  <span class="hljs-selector-class">.grid</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  }
+  <span class="hljs-selector-class">.module</span> {
+    <span class="hljs-attribute">min-width</span>: <span class="hljs-number">60px</span>;
+  }
+}
+</code></pre>
+</span></div></div></div></div><div><span><p>La plantilla presenta una cuadrícula de enlaces de nombre de héroe.</p>
+<ul>
+<li>El repetidor *ngFor crea tantos enlaces como están en la matriz del componente heroes</li>
+<li>Los enlaces están diseñados como bloques de colores por el dashboard.component.css.</li>
+<li>Los enlaces no van a ninguna parte todavía, pero lo harán en breve .</li>
+</ul>
+<p>La clase es similar a la clase HeroesComponent.</p>
+<ul>
+<li>Define una propiedad de matriz de heroes.</li>
+<li>El constructor espera que Angular inyecte el HeroService en una propiedad privada heroService .</li>
+<li>El ngOnInit() gancho del ciclo de vida llama getHeroes.</li>
+</ul>
+<p>Esto getHeroes devuelve la lista dividida de héroes en las posiciones 1 y 5, devolviendo solo cuatro de los mejores héroes (2º, 3º, 4º y 5º).</p>
+<pre><code class="hljs">getHeroes(): <span class="hljs-built_in">void</span> {
+  <span class="hljs-keyword">this</span>.heroService.getHeroes()
+    .subscribe(heroes =&gt; <span class="hljs-keyword">this</span>.heroes = heroes.slice(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>));
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="anadir-el-panel-de-control"></a><a href="#anadir-el-panel-de-control" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Añadir el panel de control</h2>
+<p>Para navegar hacia el panel de control, el enrutador necesita una ruta adecuada.</p>
+<p>Importar el DashboardComponent en el AppRoutingModule.</p>
+</span></div><div class="tabs"><div class="nav-tabs"><div class="nav-link active" id="18-tab" data-group="group_17" data-tab="tabpanel_18">src / app / app-routing.module.ts (importar DashboardComponent)</div></div><div class="tab-content"><div class="tab-pane active" data-group="group_17" tabindex="-1" id="tabpanel_18"><div><span><pre><code class="hljs"><span class="hljs-keyword">import</span> { DashboardComponent }   <span class="hljs-keyword">from</span> <span class="hljs-string">'./dashboard/dashboard.component'</span>;
+</code></pre>
+</span></div></div></div></div><div><span><p>Agregue una ruta a la matriz AppRoutingModule.routes que coincida con una ruta al DashboardComponent.</p>
+<pre><code class="hljs">{ <span class="hljs-attribute">path</span>: <span class="hljs-string">'dashboard'</span>, component: DashboardComponent },
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="anadir-ruta-por-defecto"></a><a href="#anadir-ruta-por-defecto" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Añadir ruta por defecto</h3>
+<p>Cuando se inicia la aplicación, la barra de direcciones del navegador apunta a la raíz del sitio web. Eso no coincide con ninguna ruta existente, por lo que el enrutador no navega a ningún lado. El espacio debajo de <strong>router-outlet</strong> está en blanco.</p>
+<p>Para hacer que la aplicación navegue automáticamente al panel de control, agregue la siguiente ruta a la matriz AppRoutingModule.Routes.</p>
+<pre><code class="hljs">{ <span class="hljs-attribute">path</span>: <span class="hljs-string">''</span>, redirectTo: <span class="hljs-string">'/dashboard'</span>, pathMatch: <span class="hljs-string">'full'</span> },
+</code></pre>
+<p>Esta ruta redirige una URL que coincide completamente con la ruta vacía a la ruta cuya ruta es '/dashboard'.</p>
+<p>Una vez que se actualiza el navegador, el enrutador carga DashboardComponent y la barra de direcciones del navegador muestra la URL /dashboard.</p>
+<h3><a class="anchor" aria-hidden="true" id="anadir-enlace-al-panel"></a><a href="#anadir-enlace-al-panel" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Añadir enlace al panel</h3>
+<p>El usuario debe poder navegar hacia adelante y hacia atrás entre DashboardComponent y HeroesComponent haciendo clic en los enlaces en el área de navegación cerca de la parte superior de la página.</p>
+<p>Agrega un enlace de navegación del panel a la plantilla AppComponent, justo encima del enlace Héroes.</p>
+<pre><code class="hljs"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">routerLink</span>=<span class="hljs-string">"/dashboard"</span>&gt;</span>Dashboard<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">routerLink</span>=<span class="hljs-string">"/heroes"</span>&gt;</span>Heroes<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">router-outlet</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">router-outlet</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">app-messages</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">app-messages</span>&gt;</span>
+</span></code></pre>
+<p>Después de que el navegador se actualice, puede navegar libremente entre las dos vistas haciendo clic en los enlaces.</p>
+<h2><a class="anchor" aria-hidden="true" id="navegando-a-los-detalles-del-heroe"></a><a href="#navegando-a-los-detalles-del-heroe" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Navegando a los detalles del héroe</h2>
+<p>La HeroDetailsComponent muestra los detalles de un héroe seleccionado. Por el momento HeroDetailsComponent solo es visible en la parte inferior de la HeroesComponent</p>
+<p>El usuario debe poder acceder a estos detalles de tres maneras.</p>
+<ol>
+<li>Al hacer clic en un héroe en el tablero de mandos.</li>
+<li>Al hacer clic en un héroe en la lista de héroes.</li>
+<li>Al pegar una URL de &quot;vínculo profundo&quot; en la barra de direcciones del navegador que identifica al héroe que se mostrará.</li>
+</ol>
+<p>En esta sección, habilitará la navegación hacia HeroDetailsComponent y la liberará de HeroesComponent.</p>
+<h3><a class="anchor" aria-hidden="true" id="eliminar-detalles-del-heroe-desde-el-heroescomponent"></a><a href="#eliminar-detalles-del-heroe-desde-el-heroescomponent" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Eliminar detalles del héroe desde el HeroesComponent</h3>
+<p>Cuando el usuario hace clic en un elemento de héroe en el HeroesComponent, la aplicación debe navegar a HeroDetailComponent, reemplazando la vista de lista de héroes con la vista de detalles del héroe. La vista de lista de héroes ya no debería mostrar detalles de héroe como lo hace ahora.</p>
+<p>Abra la plantilla HeroesComponent ( heroes/heroes.component.html) y elimine el elemento <strong>app-hero-detail</strong> de la parte inferior.</p>
+<p>Hacer clic en un objeto de héroe ahora no hace nada. Lo arreglará poco después de habilitar el enrutamiento a HeroDetailComponent.</p>
+<h3><a class="anchor" aria-hidden="true" id="anadir-una-ruta-de-detalle-de-heroe"></a><a href="#anadir-una-ruta-de-detalle-de-heroe" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Añadir una ruta de detalle de héroe</h3>
+<p>Una URL como ~/detail/11 sería una buena URL para navegar a la vista de Detalle del héroe del héroe cuyo id es 11.</p>
+<p>Abrir AppRoutingModule e importar HeroDetailComponent.</p>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> { HeroDetailComponent }  <span class="hljs-keyword">from</span> <span class="hljs-string">'./hero-detail/hero-detail.component'</span>;
+</code></pre>
+<p>Luego, agregue una ruta parametrizada a la AppRoutingModule.routesmatriz que coincida con el patrón de ruta en la vista de detalles del héroe .</p>
+<pre><code class="hljs">{ <span class="hljs-attribute">path</span>: <span class="hljs-string">'detail/:id'</span>, component: HeroDetailComponent },
+</code></pre>
+<p>Los dos puntos (:) en el pathindica que :id es un marcador de posición para un héroe específico id.</p>
+<p>En este punto, todas las rutas de aplicación están en su lugar.</p>
+<pre><code class="hljs">const <span class="hljs-string">routes:</span> Routes = [
+  { <span class="hljs-string">path:</span> <span class="hljs-string">''</span>, <span class="hljs-string">redirectTo:</span> <span class="hljs-string">'/dashboard'</span>, <span class="hljs-string">pathMatch:</span> <span class="hljs-string">'full'</span> },
+  { <span class="hljs-string">path:</span> <span class="hljs-string">'dashboard'</span>, <span class="hljs-string">component:</span> DashboardComponent },
+  { <span class="hljs-string">path:</span> <span class="hljs-string">'detail/:id'</span>, <span class="hljs-string">component:</span> HeroDetailComponent },
+  { <span class="hljs-string">path:</span> <span class="hljs-string">'heroes'</span>, <span class="hljs-string">component:</span> HeroesComponent }
+];
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="dashboardcomponent-enlaces-de-heroe"></a><a href="#dashboardcomponent-enlaces-de-heroe" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DashboardComponent enlaces de héroe</h3>
+<p>Los DashboardComponent enlaces de héroe no hacen nada por el momento.</p>
+<p>Ahora que el enrutador tiene una ruta a HeroDetailComponent, corrija los enlaces del héroe del tablero para navegar a través de la ruta del tablero parametrizado .</p>
+<pre><code class="hljs"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let hero of heroes"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-1-4"</span>
+    <span class="hljs-attr">routerLink</span>=<span class="hljs-string">"/detail/</span></span></span><span class="hljs-template-variable">{{hero.id}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"module hero"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span></span><span class="hljs-template-variable">{{hero.name}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</span></code></pre>
+<h3><a class="anchor" aria-hidden="true" id="heroescomponent-enlaces-de-heroe"></a><a href="#heroescomponent-enlaces-de-heroe" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HeroesComponent enlaces de héroe</h3>
+<p>Los elementos de héroe en HeroesComponent son elementos <strong>li</strong> cuyos eventos de clic están vinculados al onSelect() método del componente .</p>
+<pre><code class="hljs"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"heroes"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let hero of heroes"</span>
+    [<span class="hljs-attr">class.selected</span>]=<span class="hljs-string">"hero === selectedHero"</span>
+    (<span class="hljs-attr">click</span>)=<span class="hljs-string">"onSelect(hero)"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge"</span>&gt;</span></span><span class="hljs-template-variable">{{hero.id}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> </span><span class="hljs-template-variable">{{hero.name}}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</span></code></pre>
+<p>Desplace el elemento <strong>li</strong> solamente con <em>ngFor, envuelva la insignia y el nombre en un elemento de ancla (</em><em>a</em>*) y agregue un atributo routerLink al ancla que sea el mismo que en la plantilla del panel de control.</p>
+<pre><code class="hljs"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"heroes"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let hero of heroes"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">routerLink</span>=<span class="hljs-string">"/detail/</span></span></span><span class="hljs-template-variable">{{hero.id}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge"</span>&gt;</span></span><span class="hljs-template-variable">{{hero.id}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> </span><span class="hljs-template-variable">{{hero.name}}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</span></code></pre>
+<p>Tendrá que arreglar la hoja de estilo privada ( heroes.component.css) para que la lista se vea como lo hizo antes.</p>
+<pre><code class="hljs"><span class="hljs-comment">/* HeroesComponent's private CSS styles */</span>
+<span class="hljs-selector-class">.heroes</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2em</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">list-style-type</span>: none;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">15em</span>;
+}
+<span class="hljs-selector-class">.heroes</span> <span class="hljs-selector-tag">li</span> {
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EEE</span>;
+  <span class="hljs-attribute">margin</span>: .<span class="hljs-number">5em</span>;
+  <span class="hljs-attribute">padding</span>: .<span class="hljs-number">3em</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">1.6em</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+}
+
+<span class="hljs-selector-class">.heroes</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#607D8B</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DDD</span>;
+  <span class="hljs-attribute">left</span>: .<span class="hljs-number">1em</span>;
+}
+
+<span class="hljs-selector-class">.heroes</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#888</span>;
+  <span class="hljs-attribute">text-decoration</span>: none;
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">250px</span>;
+}
+
+<span class="hljs-selector-class">.heroes</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>:<span class="hljs-number">#607D8B</span>;
+}
+
+<span class="hljs-selector-class">.heroes</span> <span class="hljs-selector-class">.badge</span> {
+  <span class="hljs-attribute">display</span>: inline-block;
+  <span class="hljs-attribute">font-size</span>: small;
+  <span class="hljs-attribute">color</span>: white;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.8em</span> <span class="hljs-number">0.7em</span> <span class="hljs-number">0</span> <span class="hljs-number">0.7em</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#607D8B</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1em</span>;
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">left</span>: -<span class="hljs-number">1px</span>;
+  <span class="hljs-attribute">top</span>: -<span class="hljs-number">4px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">1.8em</span>;
+  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">text-align</span>: right;
+  <span class="hljs-attribute">margin-right</span>: .<span class="hljs-number">8em</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">4px</span>;
+}
+</code></pre>
+<p>Eliminar el código muerto (opcional)</p>
+<p>Mientras la HeroesComponentclase todavía funciona, el método onSelect() y la propiedad selectedHero ya no se utilizan.</p>
+<p>Es bueno ordenarlo y te lo agradecerás más tarde. Aquí está la clase después de podar el código muerto.</p>
+</span></div><div class="tabs"><div class="nav-tabs"><div class="nav-link active" id="20-tab" data-group="group_19" data-tab="tabpanel_20">src / app / heroes / heroes.component.ts (limpiado)</div></div><div class="tab-content"><div class="tab-pane active" data-group="group_19" tabindex="-1" id="tabpanel_20"><div><span><pre><code class="hljs"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> HeroesComponent <span class="hljs-keyword">implements</span> OnInit {
+  heroes: Hero[];
+
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">private</span> heroService: HeroService</span>) { }
+
+  ngOnInit() {
+    <span class="hljs-keyword">this</span>.getHeroes();
+  }
+
+  getHeroes(): <span class="hljs-built_in">void</span> {
+    <span class="hljs-keyword">this</span>.heroService.getHeroes()
+    .subscribe(<span class="hljs-function"><span class="hljs-params">heroes</span> =&gt;</span> <span class="hljs-keyword">this</span>.heroes = heroes);
+  }
+}
+</code></pre>
+</span></div></div></div></div><div><span><h2><a class="anchor" aria-hidden="true" id="enrutable-herodetailcomponent"></a><a href="#enrutable-herodetailcomponent" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enrutable HeroDetailComponent</h2>
+<p>Anteriormente, el padre HeroesComponent establecía la propiedad HeroDetailComponent.hero  y HeroDetailComponent mostraba al héroe.</p>
+<p>HeroesComponent ya no hace eso Ahora el enrutador crea el HeroDetailComponent en respuesta a una URL como ~/detail/11.</p>
+<p>El HeroDetailComponent necesita una nueva forma de obtener el héroe para mostrar .</p>
+<ul>
+<li>Consigue la ruta que lo creó,</li>
+<li>Extraer idde la ruta.</li>
+<li>Adquirir el héroe con eso iddesde el servidor a través de HeroService</li>
+</ul>
+<p>Agregue las siguientes importaciones:</p>
+</span></div><div class="tabs"><div class="nav-tabs"><div class="nav-link active" id="22-tab" data-group="group_21" data-tab="tabpanel_22">src / app / hero-detail / hero-detail.component.ts</div></div><div class="tab-content"><div class="tab-pane active" data-group="group_21" tabindex="-1" id="tabpanel_22"><div><span><pre><code class="hljs"><span class="hljs-section">import</span> { <span class="hljs-attribute">ActivatedRoute</span> } from <span class="hljs-string">'<span class="hljs-variable">@angular</span>/router'</span>;
+<span class="hljs-section">import</span> { <span class="hljs-attribute">Location</span> } from <span class="hljs-string">'<span class="hljs-variable">@angular</span>/common'</span>;
+
+<span class="hljs-section">import</span> { <span class="hljs-attribute">HeroService</span> }  from <span class="hljs-string">'../hero.service'</span>;
+</code></pre>
+</span></div></div></div></div><div><span><p>Inyecte el ActivatedRoute, HeroService y los Location services en el constructor, guardando sus valores en campos privados:</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">constructor</span><span class="hljs-params">(
+  <span class="hljs-keyword">private</span> route: ActivatedRoute,
+  <span class="hljs-keyword">private</span> heroService: HeroService,
+  <span class="hljs-keyword">private</span> location: Location
+)</span> <span class="hljs-comment">{}</span>
+</span></code></pre>
+<p>El ActivatedRoute guarda información sobre la ruta a esta instancia del HeroDetailComponent. Este componente está interesado en la bolsa de parámetros de la ruta extraída de la URL. El parámetro &quot;id&quot; es el id del héroe a mostrar.</p>
+<p>La HeroService obtiene datos héroe desde el servidor remoto y este componente se utilizan para obtener el héroe-a-pantalla .</p>
+<p>El Location un servicio angular para interactuar con el navegador. Lo usarás más tarde para volver a la vista que navegó aquí.</p>
+<h3><a class="anchor" aria-hidden="true" id="extraer-el-parametro-de-la-ruta-de-id"></a><a href="#extraer-el-parametro-de-la-ruta-de-id" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extraer el parametro de la ruta de ID</h3>
+<p>En el ngOnInit() gancho del ciclo de vida llame getHero() y defínalo de la siguiente manera.</p>
+<pre><code class="hljs">ngOnInit(): void {
+  <span class="hljs-keyword">this</span>.getHero();
+}
+
+getHero(): void {
+  <span class="hljs-keyword">const</span> id = +<span class="hljs-keyword">this</span>.route.snapshot.paramMap.<span class="hljs-keyword">get</span>(<span class="hljs-string">'id'</span>);
+  <span class="hljs-keyword">this</span>.heroService.getHero(id)
+    .subscribe(hero =&gt; <span class="hljs-keyword">this</span>.hero = hero);
+}
+</code></pre>
+<p>El route.snapshot una imagen estática de la información de ruta poco después de que el componente fue creado.</p>
+<p>El paramMap es un diccionario de valores de parámetros de ruta extraídos de la URL. La &quot;id&quot; clave devuelve la id del héroe a buscar.</p>
+<p>Los parámetros de ruta son siempre cadenas. El operador de JavaScript (+) convierte la cadena en un número, que es lo que id debería ser un héroe .</p>
+<p>El navegador se actualiza y la aplicación se bloquea con un error del compilador. HeroService no tiene un getHero() metodo Agrégalo ahora.</p>
+<h3><a class="anchor" aria-hidden="true" id="anadir-heroservicegethero"></a><a href="#anadir-heroservicegethero" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Añadir HeroService.getHero()</h3>
+<p>Abre HeroService y añade este método getHero().</p>
+<pre><code class="hljs">getHero(id: number): Observable&lt;Hero&gt; {
+  <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> send the message _after_ fetching the hero</span>
+  <span class="hljs-keyword">this</span>.messageService.add(<span class="hljs-string">`HeroService: fetched hero id=<span class="hljs-subst">${id}</span>`</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">of</span>(HEROES.find(<span class="hljs-function"><span class="hljs-params">hero</span> =&gt;</span> hero.id === id));
+}
+</code></pre>
+<blockquote>
+<p>Tenga en cuenta los backticks (`) que definen un literal de plantilla de JavaScript para incrustar el id.</p>
+</blockquote>
+<p>Como getHeroes(), getHero() tiene una firma asíncrona. Devuelve un héroe simulado como un Observable, utilizando la of() función RxJS .</p>
+<p>Podrás volver a implementar getHero() como una solicitud Http real sin tener que cambiar el HeroDetailComponent que la llama.</p>
+<p>Pruébalo</p>
+<p>El navegador se actualiza y la aplicación está funcionando de nuevo. Puedes hacer clic en un héroe en el tablero o en la lista de héroes y navegar a la vista detallada de ese héroe.</p>
+<p>Si pega localhost:4200/detail/11en la barra de direcciones del navegador, el enrutador navega a la vista de detalles del héroe con id: 11&quot;Mr. Nice&quot;.</p>
+<h3><a class="anchor" aria-hidden="true" id="encuentra-el-camino-de-regreso"></a><a href="#encuentra-el-camino-de-regreso" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Encuentra el camino de regreso</h3>
+<p>Al hacer clic en el botón de retroceso del navegador, puede volver a la lista de héroes o la vista del tablero de mandos, según lo que le haya enviado a la vista de detalles.</p>
+<p>Sería bueno tener un botón en la vista HeroDetail que pueda hacer eso.</p>
+<p>Agregue un botón de retroceso en la parte inferior de la plantilla del componente y ajústelo al método goBack() del componente .</p>
+<pre><code class="hljs">goBack(): <span class="hljs-keyword">void</span> {
+  <span class="hljs-keyword">this</span>.location.back();
+}
+</code></pre>
+<p>Actualiza el navegador y comienza a hacer clic. Los usuarios pueden navegar por la aplicación, desde el panel de control hasta los detalles del héroe y viceversa, desde la lista de héroes hasta el mini detalle hasta los detalles del héroe y de nuevo a los héroes.</p>
+<p>Has cumplido con todos los requisitos de navegación que impulsaron esta página.</p>
+<h2><a class="anchor" aria-hidden="true" id="revisicon-final-del-codigo"></a><a href="#revisicon-final-del-codigo" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Revisicón final del código</h2>
+<p>Aquí están los archivos de código discutidos en esta página.</p>
+<p>AppRoutingModule , AppModule y HeroService</p>
+</span></div><div class="tabs"><div class="nav-tabs"><div class="nav-link active" id="24-tab" data-group="group_23" data-tab="tabpanel_24">src / app / app-routing.module.ts</div><div class="nav-link" id="25-tab" data-group="group_23" data-tab="tabpanel_25">src / app / app.module.ts</div><div class="nav-link" id="26-tab" data-group="group_23" data-tab="tabpanel_26">src / app / hero.service.ts</div></div><div class="tab-content"><div class="tab-pane active" data-group="group_23" tabindex="-1" id="tabpanel_24"><div><span><pre><code class="hljs"><span class="hljs-keyword">import</span> { NgModule }             from <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> { RouterModule, Routes } from <span class="hljs-string">'@angular/router'</span>;
+
+<span class="hljs-keyword">import</span> { DashboardComponent }   from <span class="hljs-string">'./dashboard/dashboard.component'</span>;
+<span class="hljs-keyword">import</span> { HeroesComponent }      from <span class="hljs-string">'./heroes/heroes.component'</span>;
+<span class="hljs-keyword">import</span> { HeroDetailComponent }  from <span class="hljs-string">'./hero-detail/hero-detail.component'</span>;
+
+const <span class="hljs-string">routes:</span> Routes = [
+  { <span class="hljs-string">path:</span> <span class="hljs-string">''</span>, <span class="hljs-string">redirectTo:</span> <span class="hljs-string">'/dashboard'</span>, <span class="hljs-string">pathMatch:</span> <span class="hljs-string">'full'</span> },
+  { <span class="hljs-string">path:</span> <span class="hljs-string">'dashboard'</span>, <span class="hljs-string">component:</span> DashboardComponent },
+  { <span class="hljs-string">path:</span> <span class="hljs-string">'detail/:id'</span>, <span class="hljs-string">component:</span> HeroDetailComponent },
+  { <span class="hljs-string">path:</span> <span class="hljs-string">'heroes'</span>, <span class="hljs-string">component:</span> HeroesComponent }
+];
+
+<span class="hljs-meta">@NgModule</span>({
+<span class="hljs-symbol">  imports:</span> [ RouterModule.forRoot(routes) ],
+<span class="hljs-symbol">  exports:</span> [ RouterModule ]
+})
+export <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppRoutingModule</span> {</span>}
+</code></pre>
+</span></div></div><div class="tab-pane" data-group="group_23" tabindex="-1" id="tabpanel_25"><div><span><pre><code class="hljs"><span class="hljs-keyword">import</span> { NgModule }       <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> { BrowserModule }  <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser'</span>;
+<span class="hljs-keyword">import</span> { FormsModule }    <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/forms'</span>;
+
+<span class="hljs-keyword">import</span> { AppComponent }         <span class="hljs-keyword">from</span> <span class="hljs-string">'./app.component'</span>;
+<span class="hljs-keyword">import</span> { DashboardComponent }   <span class="hljs-keyword">from</span> <span class="hljs-string">'./dashboard/dashboard.component'</span>;
+<span class="hljs-keyword">import</span> { HeroDetailComponent }  <span class="hljs-keyword">from</span> <span class="hljs-string">'./hero-detail/hero-detail.component'</span>;
+<span class="hljs-keyword">import</span> { HeroesComponent }      <span class="hljs-keyword">from</span> <span class="hljs-string">'./heroes/heroes.component'</span>;
+<span class="hljs-keyword">import</span> { MessagesComponent }    <span class="hljs-keyword">from</span> <span class="hljs-string">'./messages/messages.component'</span>;
+
+<span class="hljs-keyword">import</span> { AppRoutingModule }     <span class="hljs-keyword">from</span> <span class="hljs-string">'./app-routing.module'</span>;
+
+@NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
+  ],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    HeroesComponent,
+    HeroDetailComponent,
+    MessagesComponent
+  ],
+  bootstrap: [ AppComponent ]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppModule</span> { }</span>
+</code></pre>
+</span></div></div><div class="tab-pane" data-group="group_23" tabindex="-1" id="tabpanel_26"><div><span><pre><code class="hljs"><span class="hljs-keyword">import</span> { Injectable } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+
+<span class="hljs-keyword">import</span> { Observable, <span class="hljs-keyword">of</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'rxjs'</span>;
+
+<span class="hljs-keyword">import</span> { Hero } <span class="hljs-keyword">from</span> <span class="hljs-string">'./hero'</span>;
+<span class="hljs-keyword">import</span> { HEROES } <span class="hljs-keyword">from</span> <span class="hljs-string">'./mock-heroes'</span>;
+<span class="hljs-keyword">import</span> { MessageService } <span class="hljs-keyword">from</span> <span class="hljs-string">'./message.service'</span>;
+
+@Injectable({ <span class="hljs-attr">providedIn</span>: <span class="hljs-string">'root'</span> })
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeroService</span> </span>{
+
+  <span class="hljs-keyword">constructor</span>(private messageService: MessageService) { }
+
+  getHeroes(): Observable&lt;Hero[]&gt; {
+    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> send the message _after_ fetching the heroes</span>
+    <span class="hljs-keyword">this</span>.messageService.add(<span class="hljs-string">'HeroService: fetched heroes'</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">of</span>(HEROES);
+  }
+
+  getHero(id: number): Observable&lt;Hero&gt; {
+    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> send the message _after_ fetching the hero</span>
+    <span class="hljs-keyword">this</span>.messageService.add(<span class="hljs-string">`HeroService: fetched hero id=<span class="hljs-subst">${id}</span>`</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">of</span>(HEROES.find(<span class="hljs-function"><span class="hljs-params">hero</span> =&gt;</span> hero.id === id));
+  }
+}
+</code></pre>
+</span></div></div></div></div><div><span><p>AppComponent</p>
+</span></div><div class="tabs"><div class="nav-tabs"><div class="nav-link active" id="28-tab" data-group="group_27" data-tab="tabpanel_28">src / app / app.component.html</div><div class="nav-link" id="29-tab" data-group="group_27" data-tab="tabpanel_29">src / app / app.component.css</div></div><div class="tab-content"><div class="tab-pane active" data-group="group_27" tabindex="-1" id="tabpanel_28"><div><span><pre><code class="hljs"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">routerLink</span>=<span class="hljs-string">"/dashboard"</span>&gt;</span>Dashboard<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">routerLink</span>=<span class="hljs-string">"/heroes"</span>&gt;</span>Heroes<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">router-outlet</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">router-outlet</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">app-messages</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">app-messages</span>&gt;</span>
+</span></code></pre>
+</span></div></div><div class="tab-pane" data-group="group_27" tabindex="-1" id="tabpanel_29"><div><span><pre><code class="hljs"><span class="hljs-comment">/* AppComponent's private CSS styles */</span>
+<span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.2em</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#999</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-tag">h2</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2em</span>;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">text-decoration</span>: none;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">display</span>: inline-block;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span>, <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:link</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#607d8b</span>;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#039be5</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#cfd8dc</span>;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.active</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#039be5</span>;
+}
+</code></pre>
+</span></div></div></div></div><div><span><p>DashboardComponent</p>
+</span></div><div class="tabs"><div class="nav-tabs"><div class="nav-link active" id="31-tab" data-group="group_30" data-tab="tabpanel_31">src / app / dashboard / dashboard.component.html</div><div class="nav-link" id="32-tab" data-group="group_30" data-tab="tabpanel_32">src / app / dashboard / dashboard.component.ts</div><div class="nav-link" id="33-tab" data-group="group_30" data-tab="tabpanel_33">src / app / dashboard / dashboard.component.css</div></div><div class="tab-content"><div class="tab-pane active" data-group="group_30" tabindex="-1" id="tabpanel_31"><div><span><pre><code class="hljs"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Top Heroes<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"grid grid-pad"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let hero of heroes"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-1-4"</span>
+      <span class="hljs-attr">routerLink</span>=<span class="hljs-string">"/detail/</span></span></span><span class="hljs-template-variable">{{hero.id}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"module hero"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span></span><span class="hljs-template-variable">{{hero.name}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</span></code></pre>
+</span></div></div><div class="tab-pane" data-group="group_30" tabindex="-1" id="tabpanel_32"><div><span><pre><code class="hljs"><span class="hljs-keyword">import</span> { Component, OnInit } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> { Hero } <span class="hljs-keyword">from</span> <span class="hljs-string">'../hero'</span>;
+<span class="hljs-keyword">import</span> { HeroService } <span class="hljs-keyword">from</span> <span class="hljs-string">'../hero.service'</span>;
+
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'app-dashboard'</span>,
+  templateUrl: <span class="hljs-string">'./dashboard.component.html'</span>,
+  styleUrls: [ <span class="hljs-string">'./dashboard.component.css'</span> ]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> DashboardComponent <span class="hljs-keyword">implements</span> OnInit {
+  heroes: Hero[] = [];
+
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">private</span> heroService: HeroService</span>) { }
+
+  ngOnInit() {
+    <span class="hljs-keyword">this</span>.getHeroes();
+  }
+
+  getHeroes(): <span class="hljs-built_in">void</span> {
+    <span class="hljs-keyword">this</span>.heroService.getHeroes()
+      .subscribe(<span class="hljs-function"><span class="hljs-params">heroes</span> =&gt;</span> <span class="hljs-keyword">this</span>.heroes = heroes.slice(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>));
+  }
+}
+</code></pre>
+</span></div></div><div class="tab-pane" data-group="group_30" tabindex="-1" id="tabpanel_33"><div><span><pre><code class="hljs"><span class="hljs-comment">/* DashboardComponent's private CSS styles */</span>
+<span class="hljs-selector-attr">[class*='col-']</span> {
+  <span class="hljs-attribute">float</span>: left;
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">20px</span>;
+}
+<span class="hljs-selector-attr">[class*='col-']</span><span class="hljs-selector-pseudo">:last-of-type</span> {
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+*, *<span class="hljs-selector-pseudo">:after</span>, *<span class="hljs-selector-pseudo">:before</span> {
+  <span class="hljs-attribute">-webkit-box-sizing</span>: border-box;
+  <span class="hljs-attribute">-moz-box-sizing</span>: border-box;
+  <span class="hljs-attribute">box-sizing</span>: border-box;
+}
+<span class="hljs-selector-tag">h3</span> {
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-tag">h4</span> {
+  <span class="hljs-attribute">position</span>: relative;
+}
+<span class="hljs-selector-class">.grid</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-class">.col-1-4</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">25%</span>;
+}
+<span class="hljs-selector-class">.module</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#eee</span>;
+  <span class="hljs-attribute">max-height</span>: <span class="hljs-number">120px</span>;
+  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">120px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#607d8b</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2px</span>;
+}
+<span class="hljs-selector-class">.module</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#607d8b</span>;
+}
+<span class="hljs-selector-class">.grid-pad</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-class">.grid-pad</span> &gt; <span class="hljs-selector-attr">[class*='col-']</span><span class="hljs-selector-pseudo">:last-of-type</span> {
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">20px</span>;
+}
+@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">600px</span>) {
+  <span class="hljs-selector-class">.module</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">max-height</span>: <span class="hljs-number">75px</span>; }
+}
+@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">1024px</span>) {
+  <span class="hljs-selector-class">.grid</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  }
+  <span class="hljs-selector-class">.module</span> {
+    <span class="hljs-attribute">min-width</span>: <span class="hljs-number">60px</span>;
+  }
+}
+</code></pre>
+</span></div></div></div></div><div><span><p>HeroDetailComponent</p>
+</span></div><div class="tabs"><div class="nav-tabs"><div class="nav-link active" id="35-tab" data-group="group_34" data-tab="tabpanel_35">src / app / hero-detail / hero-detail.component.html</div><div class="nav-link" id="36-tab" data-group="group_34" data-tab="tabpanel_36">src / app / hero-detail / hero-detail.component.ts</div><div class="nav-link" id="37-tab" data-group="group_34" data-tab="tabpanel_37">src / app / hero-detail / hero-detail.component.css</div></div><div class="tab-content"><div class="tab-pane active" data-group="group_34" tabindex="-1" id="tabpanel_35"><div><span><pre><code class="hljs"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">"hero"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span></span><span class="hljs-template-variable">{{hero.name | uppercase}}</span><span class="xml"> Details<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>id: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="hljs-template-variable">{{hero.id}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>name:
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> [(<span class="hljs-attr">ngModel</span>)]=<span class="hljs-string">"hero.name"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"name"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"goBack()"</span>&gt;</span>go back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</span></code></pre>
+</span></div></div><div class="tab-pane" data-group="group_34" tabindex="-1" id="tabpanel_36"><div><span><pre><code class="hljs"><span class="hljs-keyword">import</span> { Component, OnInit } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> { ActivatedRoute } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/router'</span>;
+<span class="hljs-keyword">import</span> { Location } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/common'</span>;
+
+<span class="hljs-keyword">import</span> { Hero }         <span class="hljs-keyword">from</span> <span class="hljs-string">'../hero'</span>;
+<span class="hljs-keyword">import</span> { HeroService }  <span class="hljs-keyword">from</span> <span class="hljs-string">'../hero.service'</span>;
+
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'app-hero-detail'</span>,
+  templateUrl: <span class="hljs-string">'./hero-detail.component.html'</span>,
+  styleUrls: [ <span class="hljs-string">'./hero-detail.component.css'</span> ]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> HeroDetailComponent <span class="hljs-keyword">implements</span> OnInit {
+  hero: Hero;
+
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params">
+    <span class="hljs-keyword">private</span> route: ActivatedRoute,
+    <span class="hljs-keyword">private</span> heroService: HeroService,
+    <span class="hljs-keyword">private</span> location: Location
+  </span>) {}
+
+  ngOnInit(): <span class="hljs-built_in">void</span> {
+    <span class="hljs-keyword">this</span>.getHero();
+  }
+
+  getHero(): <span class="hljs-built_in">void</span> {
+    <span class="hljs-keyword">const</span> id = +<span class="hljs-keyword">this</span>.route.snapshot.paramMap.get(<span class="hljs-string">'id'</span>);
+    <span class="hljs-keyword">this</span>.heroService.getHero(id)
+      .subscribe(<span class="hljs-function"><span class="hljs-params">hero</span> =&gt;</span> <span class="hljs-keyword">this</span>.hero = hero);
+  }
+
+  goBack(): <span class="hljs-built_in">void</span> {
+    <span class="hljs-keyword">this</span>.location.back();
+  }
+}
+</code></pre>
+</span></div></div><div class="tab-pane" data-group="group_34" tabindex="-1" id="tabpanel_37"><div><span><pre><code class="hljs"><span class="hljs-comment">/* HeroDetailComponent's private CSS styles */</span>
+<span class="hljs-selector-tag">label</span> {
+  <span class="hljs-attribute">display</span>: inline-block;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">3em</span>;
+  <span class="hljs-attribute">margin</span>: .<span class="hljs-number">5em</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#607D8B</span>;
+  <span class="hljs-attribute">font-weight</span>: bold;
+}
+<span class="hljs-selector-tag">input</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">2em</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1em</span>;
+  <span class="hljs-attribute">padding-left</span>: .<span class="hljs-number">4em</span>;
+}
+<span class="hljs-selector-tag">button</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">font-family</span>: Arial;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+  <span class="hljs-attribute">border</span>: none;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">cursor</span>: hand;
+}
+<span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#cfd8dc</span>;
+}
+<span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:disabled</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ccc</span>;
+  <span class="hljs-attribute">cursor</span>: auto;
+}
+</code></pre>
+</span></div></div></div></div><div><span><p>HeroDetailComponent</p>
+<!--DOCUSAURUS_CODE_TABS-->
+<!--END_DOCUSAURUS_CODE_TABS-->
+<h2><a class="anchor" aria-hidden="true" id="resumen"></a><a href="#resumen" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Resumen</h2>
+<ul>
+<li>Agregaste el enrutador angular para navegar entre diferentes componentes.</li>
+<li>Se convirtió AppComponent en un componente de navegación con enlaces <strong>a</strong> y <strong>router-outlet</strong>.</li>
+<li>Configuró el enrutador en un AppRoutingModule</li>
+<li>Definió rutas simples, una ruta de redireccionamiento y una ruta parametrizada.</li>
+<li>Se utilizó la directiva routerLink en elementos de anclaje.</li>
+<li>Usted reformuló una vista maestra / detalle estrechamente acoplada en una vista de detalles enrutada.</li>
+<li>Usaste los parámetros del enlace del enrutador para navegar a la vista detallada de un héroe seleccionado por el usuario.</li>
+<li>Compartiste los múltiples HeroService componentes.</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/servicio"><span class="arrow-prev">← </span><span>Servicios</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#enrutamiento">Enrutamiento</a></li><li><a href="#agregar-el-approutingmodule">Agregar el AppRoutingModule</a><ul class="toc-headings"><li><a href="#agregar-rutas">Agregar rutas</a></li><li><a href="#routermoduleforroot">RouterModule.forRoot ()</a></li></ul></li><li><a href="#anadir-routeroutlet">Añadir RouterOutlet</a></li><li><a href="#anadir-un-enlace-de-navegacion-routerlink">Añadir un enlace de navegación ( routerLink)</a></li><li><a href="#anadir-una-vista-de-panel-de-control">Añadir una vista de panel de control</a></li><li><a href="#anadir-el-panel-de-control">Añadir el panel de control</a><ul class="toc-headings"><li><a href="#anadir-ruta-por-defecto">Añadir ruta por defecto</a></li><li><a href="#anadir-enlace-al-panel">Añadir enlace al panel</a></li></ul></li><li><a href="#navegando-a-los-detalles-del-heroe">Navegando a los detalles del héroe</a><ul class="toc-headings"><li><a href="#eliminar-detalles-del-heroe-desde-el-heroescomponent">Eliminar detalles del héroe desde el HeroesComponent</a></li><li><a href="#anadir-una-ruta-de-detalle-de-heroe">Añadir una ruta de detalle de héroe</a></li><li><a href="#dashboardcomponent-enlaces-de-heroe">DashboardComponent enlaces de héroe</a></li><li><a href="#heroescomponent-enlaces-de-heroe">HeroesComponent enlaces de héroe</a></li></ul></li><li><a href="#enrutable-herodetailcomponent">Enrutable HeroDetailComponent</a><ul class="toc-headings"><li><a href="#extraer-el-parametro-de-la-ruta-de-id">Extraer el parametro de la ruta de ID</a></li><li><a href="#anadir-heroservicegethero">Añadir HeroService.getHero()</a></li><li><a href="#encuentra-el-camino-de-regreso">Encuentra el camino de regreso</a></li></ul></li><li><a href="#revisicon-final-del-codigo">Revisicón final del código</a></li><li><a href="#resumen">Resumen</a></li></ul></nav></div><footer class="nav-footer" id="footer"><a href="https://angular.io" target="_blank" rel="noreferrer noopener" class="center"><img src="/img/angular.svg" alt="Angular" width="170" height="45"/></a><section class="copyright">Copyright © 2019 UFPS / Programación web</section></footer></div></body></html>
